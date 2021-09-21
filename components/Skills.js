@@ -28,7 +28,7 @@ export default function Skills(props) {
     ]
 
     let responsive = {
-        0: { items: 3 },
+        0: { items: 4 },
         640: { items: 4},
         1024: { items: 6 },
         1480: {items: 8},
@@ -44,7 +44,7 @@ export default function Skills(props) {
                     items={skills.map((skill,i) => {
                         return (
                             <div key={i} className="flex justify-center">
-                                <Image alt={skill.name} height={100} width={100} src={skill.pic}/>
+                                <Image alt={skill.name} height={60} width={60} src={skill.pic}/>
                             </div>
                         )
                     })}

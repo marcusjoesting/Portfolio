@@ -19,7 +19,7 @@ export default function ProjectsPage(props) {
                     return (
                         <div key={i} className="w-full md:w-1/3 h-full z-10 p-1">
                             <Fade left right>
-                                <Card {...project} />
+                                <Card {...project}/>
                             </Fade>
                         </div>
                     )

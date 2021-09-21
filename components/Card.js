@@ -6,16 +6,16 @@ import Image from 'next/image'
 
 export default function Card(props) {
     return (
-        <div className={"flex flex-col bg-white bg-opacity-50 shadow-lg  overflow-hidden cursor-pointer "}>
-        <div className="flex-none w-full relative h-64 overflow-hidden shadow">
-            <Image src={props.image} alt={props.name} cover />
+        <div className={"flex flex-col max-h-full min-h-120 bg-white bg-opacity-50 shadow-lg  overflow-hidden"}>
+        <div className="flex-none w-full relative h-64 overflow-hidden shadow bg-white">
+            <Image src={props.image} alt={props.name} layout="fill" />
         </div>
         <form className="flex-auto">
-            <div className="flex flex-col h-64 overflow-hidden align-middle px-6 pt-4">
-            <h1 className="text-xl font-semibold text-black overflow-clip">
+            <div className="flex flex-col overflow-hidden align-middle h-42 p-6 space-y-2 pt-4">
+            <h1 className="text-xl font-semibold text-black">
                 {props.name}
             </h1>
-           <div className="w-full text-lg text-black flex">
+           <div className="w-full text-lg text-black flex flex-wrap space-x-0 md:space-x-0 h-10 items-start">
                {props.react && <Badge background='bg-blue-700'>React.js</Badge>}
                {props.firebase && <Badge background='bg-red-700'>Firebase</Badge>}
                {props.html && <Badge background='bg-pink-700'>HTML</Badge>}
@@ -23,11 +23,11 @@ export default function Card(props) {
                {props.javascript && <Badge background='bg-blue-500'>JavaScript</Badge>}
                {props.webflow && <Badge background='bg-gray-700'>Webflow</Badge>}
            </div>
-            <p className="text-sm text-gray-700 flex-auto h-32 overflow-hidden truncate-w-2">
+            <p className="text-gray-800 h-12 flex-auto overflow-hidden truncate-w-2">
             {props.description}
             </p>
                 
-            <div className="py-4">
+            <div className="py-4 flex-1">
                 <Button onClick={() => console.log()}>Check It Out</Button>
                
             </div>
@@ -41,7 +41,7 @@ export function JobCard(props) {
     return (
         <div className="flex bg-white bg-opacity-30 md:flex-row justify-center flex-col rounded-xl  text-black">
         <Tooltip title={props.description}>
-            <div className="flex w-full justify-center items-center overflow-hidden align-middle  rounded-full h-48 md:w-1/2">
+            <div className="flex w-full p-5 justify-center items-center overflow-hidden align-middle  rounded-full h-48 md:w-1/2">
                 {props.image && <img src={props.image} alt="" className="object-contain w-96" />}
                 {props.text && <h1 className="text-2xl">{props.text}</h1>}
             </div>
@@ -70,7 +70,7 @@ export function JobCard(props) {
 
 
 export function Badge(props) {
-    let name = "text-white my-2 mr-1 p-1 text-xs rounded-full w-20 flex justify-center " + props.background
+    let name = "text-white p-1 text-xs rounded-full w-20 flex justify-center " + props.background
     return (
         <div className={name}>
             {props.children}

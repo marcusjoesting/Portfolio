@@ -79,10 +79,10 @@ export default function(props) {
         <div className="bg-gradient-to-r from-blue-500 to-red-500">
             <Navigation relative/>
             <Section header="My Blog Posts" subheader="My software development blog posts">
-            <div className="w-full flex justify-center mb-20 flex-wrap items-stretch">
+            <div className="w-full flex justify-center mb-20 flex-wrap items-center">
                 {posts.map((post,i) => {
                     return (
-                        <div key={i} className="w-full md:w-1/3 h-full p-1">
+                        <div key={i} className="w-full md:w-1/3 h-full min-h-120 p-1">
                             <Fade right right>
                                 <Card {...post} blog/>
                             </Fade>

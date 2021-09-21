@@ -29,19 +29,19 @@ export default function ContactForm(props) {
         <Section header="Contact Me" subheader="Let me know how I can help your business">
           <div className='bg-white bg-opacity-50 shadow-xl p-8 text-black'>
             <form action="#" method="POST">
-                  <div className="grid grid-cols-6 gap-6">
-                    <div className="col-span-6 sm:col-span-3">
+                  <div className="grid grid-cols-12 gap-3">
+                    <div className="col-span-12 sm:col-span-6">
                       <Input name="First Name" onChange={x => onChangeHandler('first',x)}/>
                     </div>
 
-                    <div className="col-span-6 sm:col-span-3">
+                    <div className="col-span-12 sm:col-span-6">
                         <Input name="Last Name" onChange={x => onChangeHandler('last',x)}/>
                     </div>
 
-                    <div className="col-span-12 sm:col-span-6">
+                    <div className="col-span-12">
                       <Input name="Email Address" onChange={x => onChangeHandler('email',x)}/>
                     </div>
-                    <div className="col-span-12 sm:col-span-6">
+                    <div className="col-span-12">
                         <Input name="Message" onChange={x => onChangeHandler('message',x)} rows/>
                     </div>
                 

@@ -7,7 +7,9 @@ export default function Index() {
         <title>Sean Marcus - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="w-screen overflow-hidden top-0 left-0">
       <Home/>
+      </div>
       </>
   )
 }

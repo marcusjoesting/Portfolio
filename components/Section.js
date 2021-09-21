@@ -12,7 +12,7 @@ export default function Section(props) {
             <SectionHeader>
                 {props.header}
             </SectionHeader>
-            <div className='text-md md:text-right text-white flex-auto flex align-middle items-center justify-end'>
+            <div className='text-md text-right text-white flex-auto flex align-middle items-center justify-end'>
                 {props.subheader}
             </div>
                 
