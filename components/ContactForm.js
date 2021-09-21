@@ -27,7 +27,7 @@ export default function ContactForm(props) {
     return (
       <Element name="Contact">
         <Section header="Contact Me" subheader="Let me know how I can help your business">
-          <div className='bg-white shadow-xl p-8 text-black'>
+          <div className='bg-white bg-opacity-50 shadow-xl p-8 text-black'>
             <form action="#" method="POST">
                   <div className="grid grid-cols-6 gap-6">
                     <div className="col-span-6 sm:col-span-3">
@@ -70,7 +70,7 @@ export function Input(props) {
             id={props.name}
             autoComplete={props.name}
             onChange={e => props.onChange(e.target.value)}
-            className="mt-1 p-4 focus:ring-white focus:border-white block w-full shadow sm:text-sm border-gray-300 rounded-md"
+            className="mt-1 p-4 focus:ring-white bg-white bg-opacity-80 focus:border-white block w-full shadow sm:text-sm border-gray-300 rounded-md"
 
         />
       </>

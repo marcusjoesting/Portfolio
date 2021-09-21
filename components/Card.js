@@ -6,8 +6,8 @@ import Image from 'next/image'
 
 export default function Card(props) {
     return (
-        <div className={"flex flex-col bg-white shadow-lg  overflow-hidden cursor-pointer "}>
-        <div className="flex-none w-full relative h-44 overflow-hidden shadow">
+        <div className={"flex flex-col bg-white bg-opacity-50 shadow-lg  overflow-hidden cursor-pointer "}>
+        <div className="flex-none w-full relative h-64 overflow-hidden shadow">
             <Image src={props.image} alt={props.name} cover />
         </div>
         <form className="flex-auto">
