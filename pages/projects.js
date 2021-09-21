@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectPage from '../Components/ProjectsPage'
+import ProjectPage from '../components/ProjectsPage'
 
 export default function(props) {
     return (
