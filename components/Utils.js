@@ -1,11 +1,11 @@
-import athlete from './images/athlete.png'
-import birthday from './images/birthday.png'
-import gunispare from './images/gunispare.png'
-import loki from './images/loki.png'
-import nicogames from './images/nicogames.png'
-import bestoftimes from './images/bestoftimes.png'
-import nicocraft from './images/nicocraft.png'
-import thirsty from './images/thirsty.png'
+const athlete = require('./images/athlete.png')
+const birthday = require('./images/birthday.png')
+const gunispare = require('./images/gunispare.png')
+const loki = require('./images/loki.png')
+const nicogames = require('./images/nicogames.png')
+const bestoftimes = require('./images/bestoftimes.png')
+const nicocraft = require('./images/nicocraft.png')
+const thirsty = require('./images/thirsty.png')
 
 
 export const projects = [
