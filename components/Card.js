@@ -15,14 +15,14 @@ export default function Card(props) {
             <h1 className="text-xl font-semibold text-black">
                 {props.name}
             </h1>
-           <div className="w-full text-lg text-black flex flex-wrap space-x-0 md:space-x-0 h-10 items-start">
+           {!props.blog && <div className="w-full text-lg text-black flex flex-wrap space-x-0 md:space-x-0 h-10 items-start">
                {props.react && <Badge background='bg-blue-700'>React.js</Badge>}
                {props.firebase && <Badge background='bg-red-700'>Firebase</Badge>}
                {props.html && <Badge background='bg-pink-700'>HTML</Badge>}
                {props.css && <Badge background='bg-green-700'>CSS</Badge>}
                {props.javascript && <Badge background='bg-blue-500'>JavaScript</Badge>}
                {props.webflow && <Badge background='bg-gray-700'>Webflow</Badge>}
-           </div>
+           </div>}
             <p className="text-gray-800 h-12 flex-auto overflow-hidden truncate-w-2">
             {props.description}
             </p>
