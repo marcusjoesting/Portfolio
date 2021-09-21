@@ -7,15 +7,15 @@ import Image from 'next/image'
 export default function Card(props) {
     return (
         <div className={"flex flex-col max-h-full min-h-120 bg-white bg-opacity-50 shadow-lg  overflow-hidden"}>
-        <div className="flex-none w-full relative h-64 overflow-hidden shadow bg-white">
-            <Image src={props.image} alt={props.name} layout="fill" />
-        </div>
+        {!props.blog && <div className="flex-none w-full h-60 relative overflow-hidden shadow bg-white">
+            <Image src={props.image} alt={props.name} layout="fill" objectFit="contain"/>
+        </div>}
         <form className="flex-auto">
-            <div className="flex flex-col overflow-hidden align-middle h-42 p-6 space-y-2 pt-4">
+            <div className="flex flex-col overflow-hidden align-middle h-72 p-6 space-y-2 pt-4">
             <h1 className="text-xl font-semibold text-black">
                 {props.name}
             </h1>
-           {!props.blog && <div className="w-full text-lg text-black flex flex-wrap space-x-0 md:space-x-0 h-10 items-start">
+           {!props.blog && <div className="w-full text-lg text-black flex flex-wrap space-x-0 md:space-x-0 items-start">
                {props.react && <Badge background='bg-blue-700'>React.js</Badge>}
                {props.firebase && <Badge background='bg-red-700'>Firebase</Badge>}
                {props.html && <Badge background='bg-pink-700'>HTML</Badge>}

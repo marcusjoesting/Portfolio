@@ -19,7 +19,7 @@ export default function HeroSection(props) {
     ]
     return (
         <Section>
-        <div className="relative min-h-screen flex flex-col px-5 md:px-0  text-black shadow-lg md:flex-row w-full py-32 justify-center items-center align-middle font-mono z-10">
+        <div className="relative min-h-screen flex flex-col px-5 md:px-10  text-black shadow-lg md:flex-row w-full py-32 justify-center items-center align-middle font-mono z-10">
             <Fade left delay={500}>
                 <div className="relative flex justify-start flex-col w-full md:w-1/2 font-sans font-bold space-y-10">
                 

@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade'
 export default function Section(props) {
     return (
         <>
-        <div className={"container mx-auto mb-10  flex flex-wrap justify-center items-center z-20 " + props.classNameOverride}>
+        <div className={"container md:px-10 mx-auto mb-10  flex flex-wrap justify-center items-center z-20 " + props.classNameOverride}>
             {props.header && <Fade left><div className="w-full z-10 bg-black px-4 shadow-xl flex md:flex-row py-5 md:py-2" >
          
             <SectionHeader>

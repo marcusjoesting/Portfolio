@@ -48,7 +48,7 @@ export default function ContactForm(props) {
               </div>
             </form>
             <div className="py-6">
-            <Button onClick={submit}>Send Message</Button>
+            <Button alt onClick={submit}>Send Message</Button>
             </div>
 
             </div>
