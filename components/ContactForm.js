@@ -1,7 +1,6 @@
 import React from 'react'
 import Section from './Section'
 import Button from './Button'
-import Modal from './Modal'
 import {uploadMessage} from '../pages/api/firebase'
 import {Element} from 'react-scroll'
 export default function ContactForm(props) {

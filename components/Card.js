@@ -1,13 +1,12 @@
 import React from 'react'
 import Tooltip from './Tooltip'
 import Button from './Button';
-import Image from 'next/image'
 
 export default function Card(props) {
     return (
         <div className={"flex flex-col bg-white shadow-lg  overflow-hidden cursor-pointer "}>
         <div className="flex-none w-full relative h-44 overflow-hidden shadow">
-            <Image src={props.image} alt={props.name} cover />
+            <img src={props.image} alt={props.name} cover />
         </div>
         <form className="flex-auto">
             <div className="flex flex-col h-64 overflow-hidden align-middle px-6 pt-4">

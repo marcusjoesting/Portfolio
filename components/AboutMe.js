@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import Section from './Section'
 import prof from './images/prof.png'
-import Image from 'next/Image'
+
 export default function(props) {
     return (
         <div>
@@ -10,7 +10,7 @@ export default function(props) {
                 <div className="flex flex-wrap justify-center items-center text-black bg-white shadow-xl">
            
                 <div className='w-full md:w-1/3 shadow-xl'>
-                        <Image className='object-cover' src={prof}/>
+                        <img className='object-cover' src={prof}/>
                     </div>
                     <div className='w-full md:w-2/3 px-10 flex flex-col space-y-5'>
                         <h1 className="text-2xl md:text-4xl font-bold mt-5 text-center md:text-left">

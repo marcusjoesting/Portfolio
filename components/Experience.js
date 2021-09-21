@@ -1,8 +1,6 @@
 import React from 'react'
 import {JobCard} from './Card'
 import Section from './Section'
-import AthleteLogo from './images/athletelogo.png'
-import url from './images/url.png'
 
 
 

@@ -1,8 +1,5 @@
 import React from 'react'
 import Section from './Section'
-import texteditor from './images/carbon.png'
-import ProgressBar from './ProgressBar'
-import Fade from 'react-reveal/Fade'
 import html from './images/html.png'
 import css from './images/css-3.png'
 import javascript from './images/javascript.png'
@@ -12,7 +9,7 @@ import react from './images/react.png'
 import webflow from './images/webflow.png'
 import photoshop from './images/photoshop.png'
 import python from './images/python.png'
-import Image from 'next/image'
+
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel'
 
@@ -47,7 +44,7 @@ export default function Skills(props) {
                     items={skills.map((skill,i) => {
                         return (
                             <div key={i} className="flex justify-center">
-                                <Image alt={skill.name} height={100} width={100} src={skill.pic}/>
+                                <img alt={skill.name} height={100} width={100} src={skill.pic}/>
                             </div>
                         )
                     })}

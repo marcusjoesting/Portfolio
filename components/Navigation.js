@@ -3,7 +3,7 @@ import githubPic from './images/github.png'
 import linkedPic from './images/linkedin (1).png'
 import Fade from 'react-reveal/Fade'
 import { Collapse } from '@material-ui/core'
-import Image from 'next/image'
+
 import Tooltip from './Tooltip'
 
 
@@ -55,12 +55,12 @@ export default function Navigation(props) {
             <div className="hidden md:flex items-center content-center justify-center font-sans bg-black p-4  rounded">
                 <Tooltip placement='bottom' title="Github Profile">
                     <div className="w-8 h-8 transistion duration-500 ml-4 hover:text-white transform hover:-translate-y-1 cursor-pointer" onClick={() => window.open('https://github.com/marcusjoesting','_blank')}>
-                        <Image src={githubPic}/>
+                        <img src={githubPic}/>
                     </div>
                 </Tooltip>
                 <Tooltip placement='bottom' title="LinkedIn Profile">
                     <div className="w-8 h-8 transistion duration-500 ml-4 hover:text-white transform hover:-translate-y-1 cursor-pointer" onClick={() => window.open('https://www.linkedin.com/in/sean-marcus-joesting/', '_blank')}>
-                        <Image src={linkedPic}/>
+                        <img src={linkedPic}/>
                     </div>
                 </Tooltip>
                 <div>

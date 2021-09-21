@@ -2,7 +2,6 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Button from './Button'
 import Section from './Section'
-import Particles from 'react-particles-js'
 import { Link } from 'react-scroll'
 
 

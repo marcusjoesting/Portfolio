@@ -7,7 +7,6 @@ import Experience from './Experience'
 import ContactForm from './ContactForm'
 import AboutMe from './AboutMe'
 import Footer from './Footer'
-import Newsletter from './Newsletter'
 import Background from './Background'
 
 export default function Home() {
