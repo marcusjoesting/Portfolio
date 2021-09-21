@@ -3,7 +3,7 @@ import React from 'react'
 export default function Button(props) {
     if (!props.alt)return (
 
-            <button onClick={props.onClick} className=" hover:text-white hover:bg-black z-10 font-sans tracking-wide text-lg transistion duration-500 uppercase transform font-2xl hover:-translate-y-2 px-4 py-2 text-black border-2 border-black rounded">
+            <button onClick={props.onClick} className="bg-white hover:text-white hover:bg-black z-10 font-sans tracking-wide text-lg transistion duration-500 uppercase transform font-2xl hover:-translate-y-2 px-4 py-2 text-black rounded">
                 {props.children}
             </button>
    

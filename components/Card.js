@@ -28,7 +28,7 @@ export default function Card(props) {
             </p>
                 
             <div className="py-4 flex-1">
-                <Button onClick={() => console.log()}>Check It Out</Button>
+                <Button onClick={() => window.open(props.url,'_blank')}>Check It Out</Button>
                
             </div>
             </div>

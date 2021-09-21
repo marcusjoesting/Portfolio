@@ -3,6 +3,7 @@ import Button from './Button'
 import Section from './Section'
 import prof from './images/prof.png'
 import Image from 'next/image'
+import { Link } from 'react-scroll'
 export default function(props) {
     return (
         <div>
@@ -25,7 +26,14 @@ export default function(props) {
                             and more! Software has endless exciting possibilities and I plan exploring them for the rest of my life.
                         </h4>
                         <div className="pb-10 md:pb-0 w-full text-center md:text-left">
-                        <Button>Contact Me</Button>
+                        <Link to="Contact" className="mr-5">
+                        <Button alt>Contact Me</Button>
+                        </Link>
+                        <a>
+                            <Button alt>
+                                Download Resume
+                            </Button>
+                        </a>
                         </div>
                         
                     </div>

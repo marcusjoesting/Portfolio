@@ -20,7 +20,7 @@ export default function Navigation(props) {
     return (
         <div className={props.relative ? "flex":"absolute w-screen top-0 flex"}>
         <Fade top>
-        <nav className={'flex md:mx-10 overflow-hidden w-full bg-black border-b-2 border-white z-20 container mx-auto justify-between items-center content-center h-20 top-0'}>
+        <nav className={'flex overflow-hidden w-full bg-black border-b-2 border-white z-20 container mx-auto justify-between items-center content-center h-20 top-0'}>
                 
         
             <div className="flex md:hidden cursor-pointe ml-4" onClick={() => setMobile(true)}>

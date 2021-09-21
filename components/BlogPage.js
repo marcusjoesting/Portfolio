@@ -82,7 +82,7 @@ export default function(props) {
             <div className="w-full flex justify-center mb-20 flex-wrap items-center">
                 {posts.map((post,i) => {
                     return (
-                        <div key={i} className="w-full md:w-1/3 h-full min-h-120 p-1">
+                        <div key={i} className="w-full md:w-1/3 h-full p-1">
                             <Fade right right>
                                 <Card {...post} blog/>
                             </Fade>
