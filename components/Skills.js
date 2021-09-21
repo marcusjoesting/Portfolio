@@ -9,7 +9,7 @@ import react from './images/react.png'
 import webflow from './images/webflow.png'
 import photoshop from './images/photoshop.png'
 import python from './images/python.png'
-
+import Image from 'next/image'
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel'
 
@@ -44,7 +44,7 @@ export default function Skills(props) {
                     items={skills.map((skill,i) => {
                         return (
                             <div key={i} className="flex justify-center">
-                                <img alt={skill.name} height={100} width={100} src={skill.pic}/>
+                                <Image alt={skill.name} height={100} width={100} src={skill.pic}/>
                             </div>
                         )
                     })}
