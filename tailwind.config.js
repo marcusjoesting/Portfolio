@@ -9,6 +9,9 @@ module.exports = {
       spacing: {
         '120': '30rem',
         '144': '36rem'
+      },
+      fontFamily: {
+        title: ['Oswald', 'Arial', 'sans-serif']
       }
     },
   },

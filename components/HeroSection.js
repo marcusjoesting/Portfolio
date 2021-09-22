@@ -24,10 +24,10 @@ export default function HeroSection(props) {
                 <div className="relative flex justify-start flex-col w-full md:w-1/2 font-sans font-bold space-y-10">
                 
                 <div>
-                <h1 className="text-5xl text-black font-mono transistion duration-500 hover:-translate-y-1 cursor-pointer">
+                <h1 className="text-7xl text-black font-title transistion duration-500 hover:-translate-y-1 cursor-pointer">
                 Full Stack <br/> Software Engineer
                 </h1>
-                <div className="text-2xl font-sans">
+                <div className="text-xl font-serif">
                     Sean Marcus Joesting
                 </div>
                 </div>
