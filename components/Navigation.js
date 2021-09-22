@@ -7,7 +7,7 @@ import githubPic from './images/github.png'
 import linkedPic from './images/linkedin (1).png'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Home', href: '/' },
