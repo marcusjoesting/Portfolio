@@ -20,7 +20,7 @@ export default function LoadingPage(props) {
     return(
         <>
         <Background/>
-        <div className='w-screen h-screen fixed top-0 text-black bg-gradient-to-r from-green-500 to-blue-500 z-50 left-0 flex justify-center items-center flex-col'> 
+        <div className='w-screen h-screen px-10 md:px-20 fixed top-0 text-black bg-gradient-to-r from-green-500 to-blue-500 z-50 left-0 flex justify-center items-center flex-col'> 
            <div className="w-48 py-4 text-center flex justify-center">
             <Loader size={100}/>
             </div>
