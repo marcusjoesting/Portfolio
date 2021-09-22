@@ -29,7 +29,7 @@ export default function(props) {
                         <Link to="Contact" className="mr-5">
                         <Button alt>Contact Me</Button>
                         </Link>
-                        <a>
+                        <a href='/seanmarcusresume.pdf' download>
                             <Button alt>
                                 Download Resume
                             </Button>
