@@ -23,17 +23,17 @@ export default function Navigation(props) {
         <nav className={'flex overflow-hidden w-full bg-black border-b-2 border-white z-20 container mx-auto justify-between items-center content-center h-20 top-0'}>
                 
         
-            <div className="flex md:hidden cursor-pointe ml-4" onClick={() => setMobile(true)}>
+            <div className="flex md:hidden cursor-pointe ml-8" onClick={() => setMobile(true)}>
                 <MenuIcon/>
             </div>
   
-            <div className="absolute w-screen top-0 left-0">
+            <div className="absolute w-screen z-50 top-0 left-0">
             {mobileNav &&
            
-            <div className="w-screen z-50 bg-white top-0 flex justify-center flex-col items-center">
+            <div className="w-full z-50 bg-white flex justify-center flex-col items-center">
                 {links.map(link => {
                     return (
-                        <div key={JSON.stringify(link)} onClick={() => window.location.href = link.url} className="w-full font-custom text-center border-b-2 border-black py-4 transistion duration-500 hover:bg-blue-500 hover:text-white cursor-pointer">
+                        <div key={JSON.stringify(link)} onClick={() => window.location.href = link.url} className="w-full font-custom text-center border-b-2 border-black py-4 transistion duration-500 hover:bg-black hover:text-white cursor-pointer">
                             {link.name}
                         </div>    
                     )
