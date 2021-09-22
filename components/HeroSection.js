@@ -21,23 +21,23 @@ export default function HeroSection(props) {
         <Section>
         <div className="relative min-h-screen flex flex-col px-5 md:px-10  text-black shadow-lg md:flex-row w-full py-32 justify-center items-center align-middle font-mono z-10">
             <Fade left delay={500}>
-                <div className="relative flex justify-start flex-col w-full md:w-1/2 font-sans font-bold space-y-10">
+                <div className="relative flex justify-start flex-col w-full md:w-1/2 font-sans font-bold space-y-5 md:space-y-10">
                 
                 <div>
-                <h1 className="text-7xl text-black font-title transistion duration-500 hover:-translate-y-1 cursor-pointer">
+                <h1 className="lg:text-7xl md:text-4xl text-5xl text-black font-title transistion duration-500 hover:-translate-y-1 cursor-pointer">
                 Full Stack <br/> Software Engineer
                 </h1>
-                <div className="text-xl font-serif">
+                <div className="text-lg lg:text-xl font-serif">
                     Sean Marcus Joesting
                 </div>
                 </div>
-                <div className='py-6 w-full flex space-x-5'>
-                <Link activeClass="bg-blue" to="Projects" spy={true} smooth={true} offset={-50} duration={1000}>
+                <div className='w-full flex flex-wrap justify-start'>
+                <Link to="Projects" spy={true} smooth={true} offset={-50} duration={1000} className="pr-5">
                 <Button alt>
                     View Projects
                 </Button>
                 </Link>
-                <Link activeClass="bg-blue" to="Contact" spy={true} smooth={true} offset={-50} duration={2000}>
+                <Link to="Contact" spy={true} smooth={true} offset={-50} duration={2000}>
                     <Button alt>
                         Contact Me  
                     </Button>

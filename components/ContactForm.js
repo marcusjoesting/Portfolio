@@ -3,6 +3,7 @@ import Section from './Section'
 import Button from './Button'
 import {uploadMessage} from '../pages/api/firebase'
 import {Element} from 'react-scroll'
+import Modal from './Modal'
 export default function ContactForm(props) {
     const [openModal, setOpenModal] = React.useState(false)
     const [formDetails,setFormDetails] = React.useState({})
@@ -53,6 +54,7 @@ export default function ContactForm(props) {
 
             </div>
       </Section>
+      <Modal open={openModal} setOpen={setOpenModal}/>
       </Element>
     )
 }
