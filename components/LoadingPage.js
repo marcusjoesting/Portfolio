@@ -2,19 +2,29 @@ import React from 'react'
 import Loader from 'react-spinners/ClipLoader'
 
 export default function LoadingPage(props) {
+    const funFacts = React.useMemo(() => {
+        return [
+            "I love soccer. I've played since I was a young child",
+            "I have many useless talents. I can juggle, solve a rubik's cube, spin a book on my finger and many other things that'll never come of use."
+        ]
+    },[])
+
+    const randomIndex = React.useMemo(() => Math.floor(Math.random()*funFacts.length),[])
+
     return(
-        <div className='w-screen h-screen fixed top-0 text-black bg-white z-50 left-0 flex justify-center items-center flex-col'> 
+        <div className='w-screen h-screen fixed top-0 text-black bg-gradient-to-r from-green-500 to-blue-500 z-50 left-0 flex justify-center items-center flex-col'> 
            <div className="w-48 py-4 text-center flex justify-center">
             <Loader size={100}/>
             </div>
-            <div className="text-4xl md:text-6xl p-4 text-bold font-custom text-center">
-                Sean Marcus Joesting
+            <div className="text-6xl my-5">
+                Loading...
             </div>
-          
-          
-          
-        
-
+            {/* <div className="text-xl p-4 text-bold font-custom text-center">
+            
+            </div> */}
+            <div className="text-xs">
+                Fun Fact: {funFacts[randomIndex]}
+            </div>
         </div>
     )
 }
