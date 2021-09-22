@@ -27,7 +27,7 @@ export default function ContactForm(props) {
 
     return (
       <Element name="Contact">
-        <Section header="Contact Me" subheader="Let me know how I can help your business">
+        <Section header="Contact Me" subheader="Let me know what I can do for you">
           <div className='bg-white bg-opacity-50 shadow-xl p-8 text-black'>
             <form action="#" method="POST">
                   <div className="grid grid-cols-12 gap-3">
