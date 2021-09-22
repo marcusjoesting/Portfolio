@@ -18,7 +18,7 @@ export default function() {
           <title>Sean Marcus - Contact Me</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        {loading && <LoadingPage/>}
+        {/* {loading && <LoadingPage/>} */}
         <BlogPage/>
         </>
     )

@@ -75,8 +75,9 @@ export default function(props) {
     ]
     return(
         <>
+    
+        <div className="bg-gradient-to-r from-blue-500 to-red-500 w-screen">
         <Background/>
-        <div className="bg-gradient-to-r from-blue-500 to-red-500">
             <Navigation relative/>
             <Section header="My Blog Posts" subheader="My software development blog posts">
             <div className="w-full flex justify-center mb-20 flex-wrap items-center">

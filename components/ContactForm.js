@@ -54,7 +54,7 @@ export default function ContactForm(props) {
 
             </div>
       </Section>
-      <Modal open={openModal} setOpen={setOpenModal}/>
+      <Modal open={openModal} setOpen={setOpenModal} title={"Message sent successfully!"} message="I have received your message and will get back to you as soon as I can!"/>
       </Element>
     )
 }

@@ -49,7 +49,7 @@ export default function Navigation() {
                         href={item.href}
                       >
                         <a className={classNames(
-                          router.pathname === item.href ? 'bg-gray-700 text-white' : 'text-gray-300 bg-opacity-30 hover:text-white',
+                          router.pathname === item.href ? 'bg-white text-white shadow-xl bg-opacity-10 shadow-white ' : 'transform transistion duration-500 hover:-translate-y-1 text-gray-300 bg-opacity-30 hover:text-white',
                           'px-3 py-2 rounded-md text-md font-medium'
                         )}
                         aria-current={router.pathname === item.href ? 'page' : undefined}>

@@ -11,9 +11,9 @@ export default function ProjectsPage(props) {
     return(
         <>
         <Background/>
-        <div className="bg-gradient-to-r from-purple-500 to-blue-300">
+        <div className="bg-gradient-to-r from-purple-500 to-blue-300 min-h-screen w-screen">
             <Navigation relative/>
-            <Section header="My Projects" subheader="My collection of websites and applications I've built">
+            <Section header="My Projects" subheader="Full stack software projects">
             <div className="w-full min-h-screen flex justify-center flex-wrap mb-20">
                 {projects.map((project, i) => {
                     return (

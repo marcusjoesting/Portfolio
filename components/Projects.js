@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade'
 import Button from './Button'
 import {projects} from './Utils'
 import {Element} from 'react-scroll'
+
 export default function ProgressBar(props) {
 
 
@@ -23,9 +24,11 @@ export default function ProgressBar(props) {
                 )
             })}
             <div className="py-6 w-full">
+                <Fade bottom>
             <Button alt onClick={() => window.location.href = '/projects'}>
                 View All Projects
             </Button>
+            </Fade>
             </div>
             </div>
         </Section>

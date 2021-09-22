@@ -19,7 +19,7 @@ export default function(props) {
           <title>Sean Marcus - My Projects</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        {loading && <LoadingPage/>}
+        {/* {loading && <LoadingPage/>} */}
         <div>
             <ProjectPage/>
         </div>
