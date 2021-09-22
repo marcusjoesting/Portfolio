@@ -9,6 +9,8 @@ import react from './images/react.png'
 import webflow from './images/webflow.png'
 import photoshop from './images/photoshop.png'
 import python from './images/python.png'
+import next from './images/next.png'
+import tailwind from './images/tailwind.png'
 import Image from 'next/image'
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel'
@@ -25,6 +27,8 @@ export default function Skills(props) {
         {name: 'AWS', rating: 65, pic: aws},
         {name: 'Webflow', rating: 90, pic: webflow},
         {name: 'Photoshop', rating: 65, pic: photoshop},
+        {name: 'NEXT.JS', rating: 85, pic: next},
+        // {name: 'Tailwind CSS', rating: 85, pic: tailwind},
     ]
 
     let responsive = {
@@ -43,8 +47,8 @@ export default function Skills(props) {
                 
                     items={skills.map((skill,i) => {
                         return (
-                            <div key={i} className="flex justify-center">
-                                <Image alt={skill.name} height={60} width={60} src={skill.pic}/>
+                            <div key={i} className="flex justify-center w-20 h-20" >
+                                <Image alt={skill.name} src={skill.pic} layout="fill" objectFit="contain"/>
                             </div>
                         )
                     })}

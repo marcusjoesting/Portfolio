@@ -24,7 +24,7 @@ export default function Navigation() {
     const router = useRouter()
     console.log(router)
   return (
-    <Disclosure as="nav" className="bg-black z-50 relative w-screen container mx-auto">
+    <Disclosure as="nav" className="bg-black z-50 border-b-2 border-white relative w-screen container mx-auto">
       {({ open }) => (
         <>
           <div className="">
@@ -50,7 +50,7 @@ export default function Navigation() {
                       >
                         <a className={classNames(
                           router.pathname === item.href ? 'bg-white text-white shadow-xl bg-opacity-10 shadow-white ' : 'transform transistion duration-500 hover:-translate-y-1 text-gray-300 bg-opacity-30 hover:text-white',
-                          'px-3 py-2 rounded-md text-md font-medium'
+                          'px-2 py-2 rounded-md text-md font-medium'
                         )}
                         aria-current={router.pathname === item.href ? 'page' : undefined}>
                         {item.name}
@@ -61,9 +61,9 @@ export default function Navigation() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-4">
              
-              <div className="hidden md:flex items-center content-center justify-center font-sans bg-black p-4  rounded">
+              <div className="hidden md:flex items-center content-center justify-center font-sans bg-black p-4 rounded">
                  <Tooltip placement='bottom' title="Github Profile">
                      <div className="w-8 h-8 transistion duration-500 ml-4 hover:text-white transform hover:-translate-y-1 cursor-pointer" onClick={() => window.open('https://github.com/marcusjoesting','_blank')}>
                          <Image src={githubPic}/>
