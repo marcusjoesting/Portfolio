@@ -8,7 +8,7 @@ export default function ContactPage(props) {
     return(
         <>
         <Background/>
-        <div className="bg-gradient-to-r from-purple-500 to-green-500 min-h-screen">
+        <div className="bg-gradient-to-r from-purple-500 to-green-500 min-h-screen w-screen">
             <Navigation relative/>
                 <ContactForm/>
              

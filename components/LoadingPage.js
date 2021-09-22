@@ -1,6 +1,6 @@
 import React from 'react'
 import Loader from 'react-spinners/ClipLoader'
-
+import Background from './Background'
 export default function LoadingPage(props) {
     const funFacts = React.useMemo(() => {
         return [
@@ -18,6 +18,8 @@ export default function LoadingPage(props) {
     const randomIndex = React.useMemo(() => Math.floor(Math.random()*funFacts.length),[])
 
     return(
+        <>
+        <Background/>
         <div className='w-screen h-screen fixed top-0 text-black bg-gradient-to-r from-green-500 to-blue-500 z-50 left-0 flex justify-center items-center flex-col'> 
            <div className="w-48 py-4 text-center flex justify-center">
             <Loader size={100}/>
@@ -29,5 +31,6 @@ export default function LoadingPage(props) {
                 Fun Fact: {funFacts[randomIndex]}
             </div>
         </div>
+        </>
     )
 }

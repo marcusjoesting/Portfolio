@@ -30,7 +30,7 @@ export default function Navigation(props) {
             <div className="absolute w-screen top-0 left-0">
             {mobileNav &&
            
-            <div className="w-screen z-20 bg-white top-0 flex justify-center flex-col items-center">
+            <div className="w-screen z-50 bg-white top-0 flex justify-center flex-col items-center">
                 {links.map(link => {
                     return (
                         <div key={JSON.stringify(link)} onClick={() => window.location.href = link.url} className="w-full font-custom text-center border-b-2 border-black py-4 transistion duration-500 hover:bg-blue-500 hover:text-white cursor-pointer">
