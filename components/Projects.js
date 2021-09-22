@@ -4,11 +4,12 @@ import Card from './Card'
 import Fade from 'react-reveal/Fade'
 import Button from './Button'
 import {projects} from './Utils'
-
+import {Element} from 'react-scroll'
 export default function ProgressBar(props) {
 
 
     return (
+        <Element name="Projects">
         <Section header="Projects" subheader="Some of my favorite work">
             <div className="flex justify-center align-middle items-stretch flex-col flex-wrap md:flex-row">
             {projects.map((project,i) => {
@@ -28,5 +29,6 @@ export default function ProgressBar(props) {
             </div>
             </div>
         </Section>
+        </Element>
     )
 }

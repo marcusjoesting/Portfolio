@@ -32,14 +32,17 @@ export default function HeroSection(props) {
                 </div>
                 </div>
                 <div className='py-6 w-full flex space-x-5'>
-                <Button alt onClick={() => window.location.href = '/projects'}>
+                <Link activeClass="bg-blue" to="Projects" spy={true} smooth={true} offset={-50} duration={1000}>
+                <Button alt>
                     View Projects
                 </Button>
-                <Button alt>
-                    <Link activeClass="bg-blue" to="Contact" className="h-full w-full" spy={true} smooth={true} offset={-50} duration={2000}>
-                        Contact Me
-                    </Link>
-                </Button>
+                </Link>
+                <Link activeClass="bg-blue" to="Contact" spy={true} smooth={true} offset={-50} duration={2000}>
+                    <Button alt>
+                        Contact Me  
+                    </Button>
+                </Link>
+               
                 </div>
             </div>
             </Fade>

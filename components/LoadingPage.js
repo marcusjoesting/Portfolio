@@ -5,7 +5,13 @@ export default function LoadingPage(props) {
     const funFacts = React.useMemo(() => {
         return [
             "I love soccer. I've played since I was a young child",
-            "I have many useless talents. I can juggle, solve a rubik's cube, spin a book on my finger and many other things that'll never come of use."
+            "I have many useless talents. I can juggle, solve a rubik's cube, spin a book on my finger and many other things that'll never come of use.",
+            "I'm interested in Machine Learning",
+            "I've always loved math.",
+            "I'm Bilingual. I speak English and Portuguese.",
+            "I enjoy playing chess in my free time.",
+            "I'm a dual citizen. I have citizenship in Brazil and the United States.",
+            "Cryptocurrency."
         ]
     },[])
 
@@ -19,9 +25,6 @@ export default function LoadingPage(props) {
             <div className="text-6xl my-5">
                 Loading...
             </div>
-            {/* <div className="text-xl p-4 text-bold font-custom text-center">
-            
-            </div> */}
             <div className="text-xs">
                 Fun Fact: {funFacts[randomIndex]}
             </div>
