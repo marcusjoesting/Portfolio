@@ -26,7 +26,7 @@ export default function ProgressBar(props) {
             <div className="py-6 w-full">
                 <Fade bottom>
             <Button alt onClick={() => window.location.href = '/projects'}>
-                View All Projects
+                View More Projects
             </Button>
             </Fade>
             </div>
