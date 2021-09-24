@@ -1,7 +1,7 @@
-# Sean Marcus Joesting Portfolio
+# Sean Marcus' Portfolio
 Built with Next.js and Tailwind CSS.
 Deployed on vercel.
-##https://seanmarcus.com
+https://seanmarcus.com
 
 
 # Next.js + Tailwind CSS Example
