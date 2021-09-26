@@ -6,7 +6,7 @@ import Tooltip from './Tooltip'
 
 export default function Experience(props) {
     const jobs = [
-        {name: 'GuniWheel Contract Work',description:'I created several ecommerce applications and help maintain the website to maximize online sales and user experience.', role: 'Software Developer', dates: 'March 2021 - Current', image: 'https://images.squarespace-cdn.com/content/v1/5ade3fab85ede16183421c85/1585249210421-94JMA8MEY9P1O5GLLCKY/GUNIWHEEL_with_slogan.png?format=1500w'},
+        {name: 'GuniWheel Contract Work',description:'Developed several ecommerce applications to maximize online sales. Connected to RESTful APIs to match specific car makes to their corresponding product. I also maintain and update their websites.', role: 'Software Developer', dates: 'March 2021 - Current', image: 'https://images.squarespace-cdn.com/content/v1/5ade3fab85ede16183421c85/1585249210421-94JMA8MEY9P1O5GLLCKY/GUNIWHEEL_with_slogan.png?format=1500w'},
         {name: 'Athlete Analytics Contract Work',description:'', role: 'Software Engineer', dates: 'November 2019 - December 2020', image: 'https://images.squarespace-cdn.com/content/v1/5fbd98f300d84279c7adca8b/1606847243944-E39IVH0XEOEAZPE3I15Y/Athlete+Analytics+Logo+02.png?format=1500w'},
         {name: 'Optimed Health', role: 'Software Engineer',description:'', dates: 'August 2019 - March 2021',image:'https://secure.optimedhealth.com/static/media/OptiMed_Logo.bdb8ed15.png'},
         
