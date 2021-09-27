@@ -19,11 +19,11 @@ export default function HeroSection(props) {
     ]
     return (
         <Section>
-        <div className="relative min-h-screen flex flex-col px-5 md:px-10  text-black shadow-lg md:flex-row w-full py-32 justify-center items-center align-middle font-mono z-10">
+        <div className="relative min-h-screen flex flex-col px-5 md:px-10  text-black shadow-lg md:flex-row w-full justify-center items-center align-middle font-mono z-10">
             <Fade left delay={500}>
-                <div className="relative flex justify-center text-center flex-col w-full font-sans font-bold space-y-5 md:space-y-10">
+                <div className=" backdrop-filter backdrop-blur-xl py-10 relative flex justify-center text-center flex-col w-full font-sans font-bold space-y-5 md:space-y-10">
                 
-                <div>
+                <div className="">
                 <h1 className="lg:text-7xl px-20 md:text-4xl text-5xl text-black font-sans transistion duration-500 hover:-translate-y-1 cursor-pointer">
                 Sean Marcus Joesting
                 </h1>
