@@ -1,9 +1,9 @@
 import React from 'react'
 
 export default function Button(props) {
-    if (!props.alt)return (
+    if (true)return (
 
-            <button onClick={props.onClick} className="shadow-xl bg-black text-white hover:text-white hover:bg-black z-10 font-sans tracking-wide text-lg transistion duration-500 uppercase transform font-2xl hover:-translate-y-2 px-4 py-2 text-black rounded">
+            <button onClick={props.onClick} className=" shadow-xl bg-black  hover:text-white hover:bg-black z-10 font-sans tracking-wide text-lg transistion duration-500 uppercase transform font-2xl hover:-translate-y-2 px-4 py-2 text-white rounded">
                 {props.children}
             </button>
    

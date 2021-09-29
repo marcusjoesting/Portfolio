@@ -22,7 +22,7 @@ function classNames(...classes) {
 
 export default function Navigation() {
     const router = useRouter()
-    console.log(router)
+   
   return (
     <Disclosure as="nav" className="bg-black z-50 border-b-2 border-white relative w-screen container mx-auto">
       {({ open }) => (
@@ -49,10 +49,10 @@ export default function Navigation() {
                         href={item.href}
                       >
                         <a className={classNames(
-                          router.pathname === item.href ? 'bg-white text-white shadow-xl bg-opacity-10 shadow-white ' : 'transform transistion duration-500 hover:-translate-y-1 text-gray-300 bg-opacity-30 hover:text-white',
+                          router && router.pathname === item.href ? 'bg-white text-white shadow-xl bg-opacity-10 shadow-white ' : 'transform transistion duration-500 hover:-translate-y-1 text-gray-300 bg-opacity-30 hover:text-white',
                           'px-2 py-2 rounded-md text-md font-medium'
                         )}
-                        aria-current={router.pathname === item.href ? 'page' : undefined}>
+                        aria-current={router && router.pathname === item.href ? 'page' : undefined}>
                         {item.name}
                         </a>
                         

@@ -11,7 +11,7 @@ import Background from './Background'
 
 export default function Home() {
     return (
-      <div className="overflow-hidden max-w-screen">
+      <div className="overflow-hidden max-w-screen bg-gradient-to-tr from-blue-300 to-green-500">
       <Navigation/>
       <HeroSection/>
       <Projects/>
@@ -19,7 +19,7 @@ export default function Home() {
       {/* <Newsletter/> */}
       <Skills/>
       <Experience/>
-      <Background/>
+      {/* <Background/> */}
       <ContactForm/>
       <Footer/> 
       </div>

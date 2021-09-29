@@ -4,7 +4,7 @@ import Particles from 'react-particles-js'
 
 export default function() {
     return (
-        <div className="bg-gradient-to-r from-green-500 to-blue-500 fixed top-0 left-0 overflow-hidden w-screen h-screen flex items-stretch"> 
+        <div className="fixed top-0 left-0 bg-gradient-to-r from-blue-600 to-green-600 overflow-hidden w-screen h-screen flex items-stretch"> 
             <Particles
     params={{
 	    "particles": {
